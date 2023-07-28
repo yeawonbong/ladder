@@ -2,25 +2,15 @@ NAME = ladder
 
 SRCS = ./ladder.c
 
-OBJS = $(SRCS:.c=.o)
-
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
 all : $(NAME)
 
-$(NAME) : $(OBJS)
-	$(CC) $(CFLAGS) -o $@ $(OBJS)
-
-obj : $(OBJS)
-
-$(OBJS) : $(SRCS)
-	$(CC) -pthread $(CFLAGS) -c $(SRCS)
-
-fclean : clean
-	rm -f $(NAME)
+$(NAME) : $(SRCS)
+	$(CC) $(CFLAGS) -o $@ $(SRCS)
 
 clean :
-	rm -f $(OBJS)
+	rm -f $(NAME)
 
-re : fclean all
+re : clean all
