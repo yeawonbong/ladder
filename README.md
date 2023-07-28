@@ -26,10 +26,30 @@ random ladder generator
 char* bars[16] = {
 	  "├", "│", "┤", "──────────" //기본 얇은막대
 	, "┣", "┃", "┫", "━━━━━━━━━━" //기본 굵은막대 (idx+4)
-	, "┡", "┃", "┪", "          " //오른쪽으로 꺾을 때 (idx+8)
-	, "┢", "┃", "┩"               //왼쪽으로 꺾을 때 (idx+12)
+	, "┡", "┃", "┪", "          " //왼쪽으로 꺾을 때 (idx+8)
+	, "┢", "┃", "┩"               //오른쪽으로 꺾을 때 (idx+12)
 };
 ```
+## 실행모습
+### 'start'값 테스트 (경로 출력)
+![navigate](https://github.com/yeawonbong/ladder/assets/75327385/7732473b-6218-4c8b-9490-70be773a0758)
+
+### `col`값 테스트 (사다리 넓이 옵션)
+![col](https://github.com/yeawonbong/ladder/assets/75327385/bde34a87-ee2e-4490-b353-f61c442df849)
+
+### `lv`값 테스트 (사다리 복잡도 레벨)
+ 
+- LV3
+       
+    ![lv3](https://github.com/yeawonbong/ladder/assets/75327385/f9d5002a-63a7-4fd3-be68-734d227235f3)
+
+- LV2
+    
+    ![lv2](https://github.com/yeawonbong/ladder/assets/75327385/c8a11a0b-faf5-453a-b92b-f715c5131a9c)
+
+- LV1
+    
+    ![lv1](https://github.com/yeawonbong/ladder/assets/75327385/6d1df65c-6d34-4c0c-a958-5b8dcf533eba)
 
 ## 참고 (코드흐름)
 ![IMG_8813C31C06F1-1](https://github.com/yeawonbong/ladder/assets/75327385/771f7d09-12fd-41ad-8dfb-b66650a73913)
