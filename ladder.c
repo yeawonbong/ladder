@@ -93,13 +93,13 @@ char	**getResult(char **ladder, int start)
 	for (int i=0; i < 12; i++)
 	{
 		ladder[i][j] += 4;
-		if (ladder[i][j] == '0' || ladder[i][j] == '4') // 왼쪽으로 꺾어질 때
+		if (ladder[i][j] == '0' || ladder[i][j] == '4') // 오른쪽으로 꺾어질 때
 		{
 			ladder[i][j] += 4;
 			j++;
 			ladder[i][j] += 8;
 		}
-		else if (ladder[i][j] == '2' || ladder[i][j] == '6') // 오른쪽으로 꺾어질 때
+		else if (ladder[i][j] == '2' || ladder[i][j] == '6') // 왼쪽으로 꺾어질 때
 		{
 			ladder[i][j] += 8;
 			j--;
